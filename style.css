@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --page-1-color: steelblue;
+    --page-2-color: tan;
+    --page-3-color: teal;
+    --page-4-color: slateblue;
+    --animate-speed: 3s;
+    --primary-font:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* OVERAL DISPLAY */
+html, body{
+    font-family: var(--primary-font);
+    line-height: 1.7em;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* ELEMENTS */
+/* anchor links */
+a{
+    text-decoration: none;
+}
+
+/* headings */
+h1{
+    padding-bottom: 20px;
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+/* BUTTONS */
+/* basic button */
+.btn{
+    display: inline-block;
+    font-size: 1.1rem;
+    color: #333;
+    background: #f4f4f4 ;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.btn:hover{
+    background: #333;
+    color: #fff ;
+}
+
+/* dark button*/
+.btn-dark{
+    background: #333;
+    color: #fff;
+}
+
+.btn-dark:hover{
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* page sections */
+/* page-colors */
+#page-1{ background: var(--page-1-color); }
+#page-2{ background: var(--page-2-color); }
+#page-3{ background: var(--page-3-color); }
+#page-4{ background: var(--page-4-color); }
+
+.page{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.page p{
+    font-size: 1.3rem;
+    padding: 2rem 15rem;
+}
+
+/* page animation */
+#page-1 h1{
+    transform: translateY(-700px);
+    animation: heading var(--animate-speed) forwards ease-in;
+}
+
+#page-1 p{
+    transform: translateX(-1800px);
+    animation: text var(--animate-speed) forwards ease-in 1s;
+}
+
+/* keyframes */
+@keyframes heading {
+    to{
+        transform: translateY(0)
+    }
+}
+
+@keyframes text {
+    to{
+        transform: translateX(0)
+    }
+}
+
