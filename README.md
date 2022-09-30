@@ -1,5 +1,5 @@
 # Presentation-Page
-A simple web page that can be used to present slides.
+A simple web page that can be used for presentation of slides.
 
 ## Aim
 Practice HTML & CSS 
